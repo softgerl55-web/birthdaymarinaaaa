@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#08060d" />
+    <meta
+      name="description"
+      content="Интерактивная открытка для Марины — с 18-летием!"
+    />
+    <title>Marina's 18th Birthday ✦</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="site-shell">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+
+      <div class="ambient ambient-one" aria-hidden="true"></div>
+      <div class="ambient ambient-two" aria-hidden="true"></div>
+      <div class="ambient ambient-three" aria-hidden="true"></div>
+
+      <main>
+        <section class="hero section-pad" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span></span>
+              Birthday transmission / 18.0
+            </p>
+
+            <h1 id="hero-title">
+              <span>🎂🪦</span>
+              MARINA'S <em>18th</em> BIRTHDAY
+            </h1>
+
+            <p class="hero-subtitle">
+              (Officially Adult &amp; Still Alive)
+            </p>
+          </div>
+
+          <div
+            class="cake-stage"
+            aria-label="Анимированный праздничный торт со свечами и надгробием"
+          >
+            <div class="orbit orbit-left" aria-hidden="true"></div>
+            <div class="orbit orbit-right" aria-hidden="true"></div>
+
+            <div class="spark spark-a" aria-hidden="true">✦</div>
+            <div class="spark spark-b" aria-hidden="true">✧</div>
+            <div class="spark spark-c" aria-hidden="true">✦</div>
+
+            <div class="cake-wrap">
+              <div class="tombstone">
+                <div class="tombstone-cap"></div>
+
+                <div class="tombstone-face">
+                  <span>RIP</span>
+                  <strong>CHILDHOOD</strong>
+                  <i>2008 — 2026</i>
+                </div>
+
+                <div class="tombstone-shadow"></div>
+              </div>
+
+              <div class="candles candles-back" aria-hidden="true">
+                <span class="candle candle-pink">
+                  <i></i>
+                  <b></b>
+                </span>
+
+                <span class="candle candle-lilac">
+                  <i></i>
+                  <b></b>
+                </span>
+
+                <span class="candle candle-pink">
+                  <i></i>
+                  <b></b>
+                </span>
+              </div>
+
+              <div class="cake cake-top">
+                <div class="icing icing-top"></div>
+                <div class="cake-shine"></div>
+              </div>
+
+              <div class="cake cake-middle">
+                <div class="icing icing-middle"></div>
+                <div class="cake-shine"></div>
+              </div>
+
+              <div class="cake cake-bottom">
+                <div class="icing icing-bottom"></div>
+                <div class="cake-shine"></div>
+              </div>
+
+              <div class="cake-plate"></div>
+              <div class="cake-shadow"></div>
+
+              <div class="candles candles-front" aria-hidden="true">
+                <span class="candle candle-lilac">
+                  <i></i>
+                  <b></b>
+                </span>
+
+                <span class="candle candle-pink">
+                  <i></i>
+                  <b></b>
+                </span>
+
+                <span class="candle candle-lilac">
+                  <i></i>
+                  <b></b>
+                </span>
+              </div>
+            </div>
+
+            <p class="cake-caption">
+              <span class="caption-dot"></span>
+              one iconic cake, zero childhood left
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="joke-banner section-pad"
+          aria-label="Поздравительная шутка"
+        >
+          <div class="joke-icon" aria-hidden="true">💀</div>
+
+          <div>
+            <p class="joke-kicker">Official birthday diagnosis</p>
+
+            <h2>Ты не умерла и будешь жить долго! 🪦</h2>
+
+            <p class="joke-subtext">
+              (Хотя 18 — это уже солидно 💀)
+            </p>
+          </div>
+
+          <div class="joke-sparkle" aria-hidden="true">✦</div>
+        </section>
+
+        <section
+          class="greeting-section section-pad"
+          aria-labelledby="greeting-title"
+        >
+          <div class="section-heading">
+            <p class="eyebrow">
+              <span></span>
+              A little something for you
+            </p>
+
+            <h2 id="greeting-title">Внутри — самое главное</h2>
+
+            <p>
+              Осторожно: внутри много любви, добрых слов и ноль поводов грустить.
+            </p>
+          </div>
+
+          <button
+            class="open-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="greeting-card"
+          >
+            <span class="button-play" aria-hidden="true">▶</span>
+
+            <span>
+              Нажми сюда, чтобы открыть главное поздравление 🤍
+            </span>
+
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <article
+            class="greeting-card"
+            id="greeting-card"
+            aria-hidden="true"
+            tabindex="-1"
+          >
+            <div class="card-inner">
+              <div class="card-topline">
+                <span>For Marina</span>
+                <span>18 / 18</span>
+              </div>
+
+              <div class="card-divider">
+                <span>✦</span>
+              </div>
+
+              <div class="letter-content">
+                <p class="letter-salutation">
+                  Маринка, с твоим 18-летием! 🤍
+                </p>
+
+                <p>
+                  я хочу пожелать тебе огромного счастья, душевного спокойствия,
+                  исполнения самых заветных желаний и как можно больше поводов
+                  улыбаться. пусть рядом всегда будут люди, которые ценят тебя
+                  так же сильно, как ты заслуживаешь, которые не только
+                  принимают твою доброту, но и возвращают ее тебе вдвойне. я
+                  хочу отдельно сказать тебе спасибо. возможно, мы не так часто
+                  общаемся, как хотелось бы, но я всегда знаю, что могу к тебе
+                  обратиться и ты не оставишь меня без помощи. ты поддерживала
+                  меня не только словами, но и поступками, помогала в моменты,
+                  когда мне это действительно было необходимо, и даже не
+                  представляешь, насколько многое для меня значили твоя поддержка
+                  и твоя готовность прийти на помощь. я очень ценю в тебе это
+                  качество - оставаться рядом, даже если между нами расстояние,
+                  занятость или долгое молчание. таких людей действительно мало,
+                  и я рада, что в моей жизни есть ты.
+                </p>
+
+                <p>
+                  в твои 18 я хочу пожелать тебе никогда не терять свою доброту,
+                  но при этом всегда помнить о себе. пусть тебе возвращается все
+                  хорошее, что ты делаешь для других, пусть жизнь будет щедра к
+                  тебе, а впереди ждет множество счастливых событий,
+                  возможностей и прекрасных людей.
+                </p>
+
+                <p>
+                  спасибо, что ты есть в моей жизни. я искренне желаю тебе всего
+                  самого светлого. с днем рождения! 🤍
+                </p>
+              </div>
+
+              <div class="card-signoff">
+                <span>with all the light in the world</span>
+                <strong>♡</strong>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span class="footer-line"></span>
+
+        <p>
+          Made with
+          <span aria-label="love">❤️</span>
+          specifically for Marina
+          <i>|</i>
+          18th Birthday Edition
+        </p>
+
+        <span class="footer-line"></span>
+      </footer>
+    </div>
+  </body>
+</html>
